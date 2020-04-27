@@ -1,0 +1,11 @@
+# Environment specific editor settings
+.vscode/settings.json
+
+# Compiled Python
+*.pyc
+
+# Coverage file generated during testing
+.coverage
+
+# Locked dependencies should be tagged and versioned explicitly
+Pipfile.lock

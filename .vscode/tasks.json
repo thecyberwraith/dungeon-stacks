@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Full Lint",
+            "group": "test",
+            "type": "shell",
+            "command": "pipenv run pylint ./dungeonstacks",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        },
+        {
+            "label": "Coverage Test",
+            "type": "shell",
+            "group": "test",
+            "command": "pipenv run coverage run --rcfile=tool_configs/coverage.ini; pipenv run coverage report --rcfile=tool_configs/coverage.ini",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true,
+            }
+        }
+    ]
+}
