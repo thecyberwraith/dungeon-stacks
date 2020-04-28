@@ -4,6 +4,9 @@
 # Compiled Python
 *.pyc
 
+# Packaged Python
+*.egg-info
+
 # Coverage file generated during testing
 .coverage
 
